@@ -12,6 +12,7 @@ import Layout from './pages/layout/Layout';
 import HomePage from './pages/homePage.jsx/HomePage';
 import ListPage from './pages/listingPage/listPage';
 import SinglePage from './pages/singlePage/SinglePage';
+import Profilepage from './pages/profilePage/Profilepage';
 function App() {
   const router = createBrowserRouter([
     {
@@ -30,10 +31,10 @@ function App() {
           path:"/:id",
           element:<SinglePage/>
         },
-        // {
-        //   path:"/profile",
-        //   element:<ProfilePage/>
-        // }
+        {
+          path:"/profile",
+          element:<Profilepage/>
+        }
       ]
     }
   ]);
