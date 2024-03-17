@@ -8,16 +8,15 @@ import "./list.scss"
 
 function ListPage() {
   const data = listData;
-
+console.log("data",data);
   return (
   <div className="listPage">
    <div className="listContainer">
     <div className="wrapper">
         <Filter/>
-        {data.map((el)=>{
+        {data?.map((el)=>{
           return <div key={el.id}>
-
-            <Card el= {el}/>
+            <Card item= {el}/>
           </div>
         })}
     </div>

@@ -16,8 +16,8 @@ import pin from "../../image/pin.png"
 const SinglePage = () => {
   const data=singlePostData
   const user=userData
-  
-  return (
+  console.log("single",data);
+  return (  
     <div className="singlePage">
     <div className="details">
       <div className="wrapper">
@@ -108,7 +108,7 @@ const SinglePage = () => {
         </div>
         <p className="title">Location</p>
         <div className="mapContainer">
-          <Map data={[data]} />
+          <Map items={[data]} />
         </div>
         <div className="buttons">
           <button>
