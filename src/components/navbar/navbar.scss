@@ -32,7 +32,7 @@ nav {
       gap: 10px;
 
       img {
-        width: 28px;
+        width: 20%;
       }
 
       span {
@@ -87,7 +87,7 @@ nav {
         background-color: #fece51;
         border: none;
         position: relative;
-        
+        cursor: pointer;
         .notification{
           position: absolute;
           top: -8px;

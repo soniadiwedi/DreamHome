@@ -8,7 +8,7 @@ import "./list.scss"
 
 function ListPage() {
   const data = listData;
-console.log("data",data);
+
   return (
   <div className="listPage">
    <div className="listContainer">
@@ -22,7 +22,7 @@ console.log("data",data);
         })}
     </div>
    </div>
-   <div className="mapContainer"><Map data={data}/></div>
+   <div className="mapContainer"><Map items={data}/></div>
   </div>
   )
 }
