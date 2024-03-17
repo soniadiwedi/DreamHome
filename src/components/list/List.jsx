@@ -8,9 +8,11 @@ const List = () => {
     return (
         <div className='list'>
           
-          {data?.map(item=>(
-            <Card key={item.id} el={item}/>
-          ))}
+         {
+          data?.map((el)=>{
+            return <Card key={el.id} item={el}/>
+          })
+         }
         </div>
       )
 }
